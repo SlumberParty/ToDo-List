@@ -1,6 +1,9 @@
 function checkboxTemplateTrue(todos) {
+    console.log(todos);
     return /*html*/`
-    <input type="checkbox" checked>${todos.task}
+        <li>
+            <input type="checkbox" checked>Learn Templates
+        </li>
     `;
 }
 

@@ -12,7 +12,9 @@ test('make a template for a false checkbox', function(assert) {
     };
 
     const expected = /*html*/`
-    <input type="checkbox">Learn forEach
+        <li>
+            <input type="checkbox">Learn forEach
+        </li>
     `;
     //Act 
     // Call the function you're testing and set the result to a const
