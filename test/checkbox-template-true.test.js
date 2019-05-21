@@ -1,3 +1,4 @@
+import checkboxTemplateTrue from '../src/index/checkbox-template-true.js';
 const test = QUnit.test;
 
 QUnit.module('checkbox template true');
@@ -20,8 +21,3 @@ test('make a template for a false checkbox', function(assert) {
     assert.equal(html, expected);
 });
 
-function checkboxTemplateTrue(todos) {
-    return /*html*/`
-    <input type="checkbox" checked>Learn Templates
-    `;
-}

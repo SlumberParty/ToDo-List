@@ -1,7 +1,7 @@
 function checkboxTemplateFalse(todos) {
     return /*html*/`
-    <input type="checkbox">Learn forEach
+    <input type="checkbox">${todos.task}
     `;
 }
 
-export default checkboxTemplateFalse
+export default checkboxTemplateFalse;
