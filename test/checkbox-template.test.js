@@ -1,3 +1,5 @@
+import checkboxTemplate from '../src/index/checkbox-template.js';
+
 const test = QUnit.test;
 
 QUnit.module('checkbox templates');
@@ -35,7 +37,7 @@ test('make a template for a checked checkbox', function(assert) {
 
     const expected = /*html*/`
         <li>
-            <input type="checkbox" checked>Learn Templates
+            <input type="checkbox"checked>Learn Templates
         </li>
     `;
 
@@ -46,18 +48,3 @@ test('make a template for a checked checkbox', function(assert) {
     //Assert
     assert.equal(html, expected);
 });
-
-function checkboxTemplate(todos) {
-    let checked = '';
-
-    if(task.completed) {
-        checked = 'checked';
-    }
-
-    const html = /*html*/`
-        <li>
-            <input ${checked}>${todos.task}
-        </li>
-    `;
-
-};

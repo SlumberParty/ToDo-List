@@ -1,6 +1,5 @@
 import todos from '../data/data-list.js';
-import checkboxTemplateFalse from './checkbox-template-false.js';
-import checkboxTemplateTrue from './checkbox-template-true.js';
+import checkboxTemplate from '../index/checkbox-template.js';
 import htmltoDOM from '../html-to-dom.js';
 
 
