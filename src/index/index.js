@@ -5,9 +5,8 @@ import htmltoDOM from '../html-to-dom.js';
 
 const listEl = document.getElementById('list');
 
-todos.forEach(todos => {
-    const htmlTrue = checkboxTemplateTrue(todos);
-    const htmlFalse = checkboxTemplateFalse(todos);
-    const dom = htmltoDOM(htmlTrue, htmlFalse);
+todos.forEach(todo => {
+    const html = checkboxTemplate(todo);
+    const dom = htmltoDOM(html);
     listEl.appendChild(dom);
 });
